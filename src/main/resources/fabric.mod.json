@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "offhand-on-top",
+	"version": "0.0.1",
+	"name": "Offhand on Top",
+	"description": "If a block in the offhand can be placed on top of the block that the main hand just placed, it will be placed (Unless shift is pressed)",
+	"authors": [
+		"PreciousFood"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/offhand-on-top/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.preciousfood.offhand_on_top.OffhandOnTop"
+		],
+		"client": [
+			"com.preciousfood.offhand_on_top.OffhandOnTopClient"
+		]
+	},
+	"mixins": [
+		"offhand-on-top.mixins.json",
+		{
+			"config": "offhand-on-top.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.16.3",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
