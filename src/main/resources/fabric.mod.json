@@ -1,7 +1,7 @@
 {
 	"schemaVersion": 1,
 	"id": "offhand-on-top",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"name": "Offhand on Top",
 	"description": "If a block in the offhand can be placed on top of the block that the main hand just placed, it will be placed (Unless shift is pressed)",
 	"authors": [
@@ -31,7 +31,7 @@
 	],
 	"depends": {
 		"fabricloader": ">=0.16.3",
-		"minecraft": "~1.21.1",
+		"minecraft": ["~1.21.1", "1.21"],
 		"java": ">=21",
 		"fabric-api": "*"
 	},
